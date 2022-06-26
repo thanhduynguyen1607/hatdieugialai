@@ -1,0 +1,17 @@
+﻿<div class="topnav">
+    <a class="active" href="">Trang chủ</a>
+    <a href="dathang">Mua hàng</a>
+    <a href="doanhthu">Doanh thu</a>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
